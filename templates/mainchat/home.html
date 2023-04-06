@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/style.css' %}">
+    <title>ChatBot</title>
+  </head>
+  <body>
+    <img src="{% static 'img/chatbot-logo-1.png' %}" alt="ChatBot" class="chatbot-image">
+    <div class="chatbot-container">
+      <div class="ChatBotPanel">
+        <h1 class="chatbot-title">ChatBot</h1>
+        <div class="Rectangle-4">
+          <div class="Rectangle-1">
+            <div class="chatbot-header">
+              <div class="chatbot-logo-2-Traced"></div>
+              <span class="chatbot-greeting">
+                Hi, I am your AI assistant. I’m ready to help you answer any question you have related to College
+              </span>
+            </div>
+            <div class="chat-messages">
+            </div>
+            <form id="chat-form">
+              {% csrf_token %}
+              <div class="input-container">
+                <input type="text" placeholder="Enter your text here" class="conversation-box">
+                <button type="submit">Send</button>
+              </div>
+            </form>           
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
+
+
+
+
+<script>
+  const conversationBox = document.querySelector('.conversation-box');
+const chatMessages = document.querySelector('.chat-messages');
+const chatForm = document.getElementById('chat-form');
+
+chatForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const userMessage = conversationBox.value.trim();
+
+  if (userMessage) {
+    displayUserMessage(userMessage);
+
+    // AJAX request
+    fetch('/chatbot_response/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+      },
+      body: `user_message=${encodeURIComponent(userMessage)}`
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        displayChatbotResponse(data.response);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+
+    conversationBox.value = '';
+  }
+});
+
+function displayUserMessage(message) {
+  const messageElement = document.createElement('p');
+  messageElement.textContent = message;
+  messageElement.classList.add('user-message');
+  chatMessages.appendChild(messageElement);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function displayChatbotResponse(response) {
+  const responseElement = document.createElement('p');
+  responseElement.textContent = response;
+  responseElement.classList.add('chatbot-response');
+  chatMessages.appendChild(responseElement);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+</script>

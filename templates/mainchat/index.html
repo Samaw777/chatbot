@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/style2.css' %}">
+    <title>College ChatBot</title>
+  </head>
+  <body>
+    <div class="v14_301">
+      <div class="v31_352">
+        <div class="v14_302"></div>
+        <div class="name"></div>
+        <h1 class="v30_471">Team 2 ChatBot</h1>
+        <div class="signup-form-container">
+          <form class="signup-form" action="{% url 'mainchat-home' %}" method="post">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <img src="{% static "img/chatbot-logo-1.png" %}" alt="ChatBot Logo" class="chatbot-logo-1">
+  </body>
+</html>

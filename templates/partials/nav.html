@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My App</title>
+  </head>
+  <body>
+    {% include 'partials/nav.html' %}
+    <div class="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/style.css' %}">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="v14_301">
+      <div class="v14_302"></div>
+      <div class="name"></div>
+      <span class="v30_471">ChatBot</span>
+      <div class="Rectangle-4">
+        <div class="Rectangle-1">
+            <div class="chatbot-logo-2-Traced"></div>
+            <span class="Hi-I-am-AI-assistant-Im-ready-to-help-you-answer-any-question-about-college">
+                Hi, I am AI assistant. I’m ready to help you answer any question about college
+              </span>
+        </div>
+        <input type="text" placeholder="Enter your text here" class="conversation-box">
+    
+    </div>
+      <div class="name"></div>
+      <div class="name"></div>
+      
+    </div>
+    <div class="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+}
+
+.v14_311 {
+  background: rgba(255, 255, 255, 0.3799999952316284);
+  width: 100%;
+  height: 671px;
+}
+
+.v14_301 {
+  width: 100%;
+  height: 1024px;
+  background: rgba(37, 0, 63, 1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.v14_302 {
+  width: 100%;
+  height: 1621px;
+  background: url("../images/v14_302.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 333px;
+  left: 473px;
+  overflow: hidden;
+}
+
+.v14_303 {
+  width: 963px;
+  height: 922px;
+  background: rgba(72, 0, 89, 1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+}
+
+.v14_304 {
+  width: 785px;
+  height: 785px;
+  background: rgba(255, 140, 253, 1);
+  opacity: 1;
+  position: absolute;
+  top: 836px;
+  left: 1600px;
+  border-radius: 50%;
+}
+
+.name {
+  color: #fff;
+}
+
+.v30_471 {
+  width: 157px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 43px;
+  left: 156px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 40px;
+  opacity: 1;
+  text-align: left;
+}
+
+.name {
+  color: #fff;
+}
+
+.name {
+  color: #fff;
+}
+.ChatBotPanel {
+  width: 1440px;
+  height: 1024px;
+  background-color: #e4dee8;
+}  
+.Rectangle-4 {
+  width: 1150px;
+  height: 671px;
+  margin: 114px 134px 156px 156px;
+  padding: 67px 56px 31px 71px;
+  border-radius: 76px;
+  background-color: rgba(255, 255, 255, 0.38);
+}
+.chat-box {
+  width: 300px;
+  height: 400px;
+  border: 1px solid rgb(250, 247, 247);
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+.Hi-I-am-AI-assistant-Im-ready-to-help-you-answer-any-question-about-college {
+  width: 330.4px;
+  height: 62.9px;
+  margin: 0 10.9px 13.9px 0;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #212529;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  color: #212529;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+.navbar-nav .active .nav-link {
+  color: #007bff;
+}
+.conversation-box {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.Rectangle-1 {
+  width: 386px;
+  height: 111px;
+  margin: 0 622px 395px 15px;
+  padding: 24.3px 16.8px 10px 28px;
+  opacity: 0.6;
+  box-shadow: 0 4px 12px -1px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.chatbot-logo-2-Traced {
+  width: 40.3px;
+  height: 42.9px;
+  padding: 0.2px 0.6px 0.2px 0.6px;
+  background-color: #614253;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(34, 0, 61, 1);
+}
+
+.v31_351 {
+  position: relative;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.v31_352 {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  background: rgba(72, 0, 89, 1);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.v31_353,
+.v31_354 {
+  position: absolute;
+  background: rgba(255, 140, 252, 1);
+  border-radius: 50%;
+}
+
+.v31_353 {
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 40%;
+}
+
+.v31_354 {
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: 60%;
+}
+
+.v31_355 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.name {
+  color: #fff;
+}
+
+.v31_357 {
+  font-weight: 500;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 1);
+  text-align: left;
+}
+
+.v31_358 {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width: 40%;
+  padding-top: 60%;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.v31_398 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 40%;
+  padding-top: 30%;
+  overflow: hidden;
+}
+
+.v31_397 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.v31_395,
+.v31_396 {
+  font-weight: 500;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.v31_395:hover,
+.v31_396:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(34, 0, 61, 1);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+label,
+input {
+  margin-bottom: 0.5rem;
+}
+
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+  background-color: rgba(72, 0, 89, 1);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(72, 0, 89, 0.8);
+}
+img.chatbot-logo-1 {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+img.Group-1 {
+  width: 1440px;
+  height: 1024px;
+  padding: 38px 0 53px 147px;
+  object-fit: contain;
+}
+
+
+.v14_301 {
+  width: 100%;
+  height: 100vh;
+  background: rgba(34, 0, 61, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.v14_302 {
+  width: 50%;
+  height: 100%;
+  background: rgba(72, 0, 89, 1);
+  position: absolute;
+  left: 0;
+}
+
+.name {
+  color: #fff;
+}
+
+.v30_471 {
+  width: 157px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 40px;
+  opacity: 1;
+  text-align: left;
+}
+.signup-form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signup-form {
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
