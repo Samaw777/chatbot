@@ -81,14 +81,27 @@ function displayUserMessage(message) {
   messageElement.classList.add('user-message');
   chatMessages.appendChild(messageElement);
   chatMessages.scrollTop = chatMessages.scrollHeight;
+
+  aiMessage.innerHTML = "Hello";
+  aiMessage.style.textAlign = "left";
+  aiMessage.style.marginBottom = "5px";
+  
+  setTimeout(function() {
+    chatMessages.appendChild(aiMessage);
+    chatMessages.scrollTo(0, document.body.scrollHeight);
+  }, 1000);
+  document.getElementById("message").value = "";
+  return false;
 }
 
-function displayChatbotResponse(response) {
+function displayChatbotResponse() {
   const responseElement = document.createElement('p');
-  responseElement.textContent = response;
+  responseElement.textContent = 'Hello';
   responseElement.classList.add('chatbot-response');
   chatMessages.appendChild(responseElement);
   chatMessages.scrollTop = chatMessages.scrollHeight;
+
+  
 }
 
 </script>
