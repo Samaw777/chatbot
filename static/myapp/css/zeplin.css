@@ -2,65 +2,57 @@ body {
     background: linear-gradient(to bottom, #4b0082, #800080);
   }
   
-  header {
-    height: 80px; /* set the height of the header */
-    background-color: transparent; /* set the background color to be transparent */
-  }
-  
-  .logo-container {
-    padding: 1rem;
-  }
-  
-  .logo-image {
-    max-width: 200px;
-  }
-  
-  /*NavBar */
+/*Nav bar header*/
+/*Nav bar header*/
+li, a, button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
 
-  nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: transparent;
-    font-size: 24px;
-    height: 80px;
-    margin-top: 10px;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-  ul li:first-child {
-    margin-left: 0;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
+.logotitle{
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.nav__links{
+  list-style: none;
+}
+.nav__links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a{
+  transition: all 0.3s ease 0;
+}
+
+.nav__links li a:hover{
+  color: #8b45fd
+}
+
+button{
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(127, 17, 224, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(127, 17, 224, 0.8);
+}
+ 
   
   /*Chatbot panel*/
 

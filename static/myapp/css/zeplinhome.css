@@ -49,7 +49,7 @@ header{
 button{
   margin-left: 20px;
   padding: 9px 25px;
-  background-color: #8b45fd(75, 0, 130, 1);
+  background-color: rgba(127, 17, 224, 1);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -57,7 +57,7 @@ button{
 }
 
 button:hover {
-  background-color: rgba(75, 136, 169, 0.8);
+  background-color: rgba(127, 17, 224, 0.8);
 }
 
   /* Main Content Styles */
@@ -70,6 +70,7 @@ button:hover {
   
   .main-left {
     width: 70%;
+    margin-left: 100px;
   }
 
   .main-left h1{
@@ -78,10 +79,16 @@ button:hover {
   }
   
   .main-left p{
-    font-size: 45px;
+    font-size: 38px;
   }
   .main-left button{
     margin-top: 20px;
+    width: 200px;
+    height: 75px;
+    flex-grow: 0;
+    margin: 26px 217px 296px 0;
+    border-radius: 21px;
+  
   }
 
   .main-right {
