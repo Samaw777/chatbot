@@ -8,5 +8,6 @@ urlpatterns = [
     path('output/', views.output, name='mainchat-output'), 
     path('chatbot_response/', csrf_exempt(views.chatbot_response), name='chatbot-response'),
     path('chatpaneltest', views.chatpaneltest, name='chatpaneltest'),
-    path('get_Response', views.get_Response, name='get_Response')
+    path('get_Response', views.get_Response, name='get_Response'),
+    path('homepage', views.homepage, name='homepage'),
 ]

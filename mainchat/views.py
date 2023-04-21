@@ -23,6 +23,10 @@ def output(request):
 def chatpaneltest(request):
     return render(request, 'mainchat/chatpaneltest.html')
 
+def homepage(request):
+    return render(request, 'mainchat/homepage.html')
+
+
 
 #Chatbot ruterning function
 #LOAD and usemodel
