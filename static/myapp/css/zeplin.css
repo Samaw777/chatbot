@@ -21,6 +21,7 @@ header{
 .logotitle{
   cursor: pointer;
   margin-right: auto;
+  font-size: 50px;
 }
 
 .nav__links{
