@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot Panel</title>
+
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/zeplin.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'mainchat-home' %}">Home</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="chatbot-wrapper">
+        <div class="chatbot-container">
+          <div class="chatbot-panel">
+            <div class="chatbot-header">
+              <div class="chatbot-logo-2-Traced"></div>
+              <div id="chatbot">
+                <p class="chatbot-greeting"><span>Chatbot: Hi there</span></p>
+              </div>
+            </div>
+          </div>
+          <div id="userInput" class="input-container">
+            <input type="text" id="textInput" name="userMessage" placeholder="Type your message..." class="conversation-box" />
+            <input type="button" value="Send" id="buttonInput" />
+          </div>
+        </div>
+        <div class="logo-container-mobile">
+          <img src="{% static 'img/chatbot-logo-1.png' %}" alt="ChatBot" class="logo-image">
+        </div>
+      </div>
+</main>
+
+<script>
+
+    function getUserResponse(){
+        var userText = $('#textInput').val();
+        var userHTML = "<p class='user-chat'>User: <span>"+userText+"</span></p>";
+        $('#textInput').val("");
+        $('#chatbot').append(userHTML);
+
+        $.get('/get_Response',{userMessage:userText}).done(function(data){
+            var returnedMessage = "<p class='chatbot-greeting'>Chatbot: <span>"+ data +"</span></p>";
+            $('#chatbot').append(returnedMessage);
+
+        })
+    }
+
+    $('#buttonInput').click(function(){
+        getUserResponse();
+    })
+</script>
+</main>>
+
+</body>
+</html>
