@@ -9,6 +9,59 @@
     <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/zeplin.css' %}">
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
 
+    <style>
+      li, a, button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 10%;
+
+}
+
+.logotitle{
+  cursor: pointer;
+  margin-right: auto;
+  font-size: 25px;
+}
+
+.nav__links{
+  list-style: none;
+}
+.nav__links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a{
+  transition: all 0.3s ease 0;
+}
+
+.nav__links li a:hover{
+  color: #8b45fd
+}
+
+header button{
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(127, 17, 224, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+  background-color: rgba(127, 17, 224, 0.8);
+}
+    </style>
+
     
 </head>
 <body>

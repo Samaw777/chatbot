@@ -21,7 +21,7 @@ header{
 .logotitle{
   cursor: pointer;
   margin-right: auto;
-  font-size: 50px;
+  font-size: 100px;
 }
 
 .nav__links{
@@ -37,7 +37,7 @@ header{
 }
 
 .nav__links li a:hover{
-  color: #8b45fd
+  color: #8b45fd;
 }
 
 button{
