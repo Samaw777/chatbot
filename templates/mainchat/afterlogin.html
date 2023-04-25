@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChatbotCollege</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/zeplinhome.css' %}">
+  </head>
+  <body>
+    <header>
+        <a class="logotitle" href="#">College Chatbot</a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="{% url 'mainchat-afterlogin' %}">Home</a></li>
+                <li><a href="{% url 'chatpaneltest' %}">Chat</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="{% url 'chatpaneltest' %}"><button>USER</button></a>
+        <a class="cta" href="{% url 'mainchat-homepage' %}"><button>LOGOUT</button></a>
+        
+    </header>
+
+    <main>
+      <div class="main-container">
+        <div class="main-left">
+          <h1>Get Help </h1>
+          <h1>For College</h1>
+          <h1>With AI</h1>   
+          <p>AI Assistant ready to help you </p>
+          <p>with any question about college </p>
+        </div>
+        <div class="main-right">
+          <img src="{% static 'img/chatbot-logo-1.png' %}" alt="ChatBot" class="chatbot-image">
+        </div>
+        <div style="clear:both"></div>
+      </div>
+    </main>
+  </body>
+</html>

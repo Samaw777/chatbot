@@ -2,202 +2,28 @@
 <html>
   <head>
     {% load static %}
-
-    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/style.css' %}">
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        font-size: 14px;
-      }
-    </style>
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="v31_351">
-      <div class="v31_352">
-        <div class="v31_353"></div>
-        <div class="v31_354"></div>
-      </div>
-      <div class="v31_355">
-        <div class="name"></div>
-        <span class="v31_357">ChatBot</span>
-      </div>
-      <div class="v31_358">
-        <form>
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" placeholder="Enter your username" required />
-          <br />
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required />
-          <br />
-          <button type="submit">Login</button>
-        </form>
-      </div>
-      <div class="v31_398">
-        <div class="name"></div>
-        <div class="v31_397">
-          <span class="v31_395">Forget Password?</span>
-          <span class="v31_396">Don’t have an account? Register here!</span>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
-
-<!DOCTYPE html>
-<html>
-  <head>
-    {% load static %}
-
-    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/style.css' %}">
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        font-size: 14px;
-      }
-    </style>
-    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="v31_351">
-      <div class="v31_352">
-        <div class="v31_353"></div>
-        <div class="v31_354"></div>
-      </div>
-      <div class="v31_355">
-        <div class="name"></div>
-        <span class="v31_357">ChatBot</span>
-      </div>
-      <div class="v31_358">
-        <form>
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" placeholder="Enter your username" required />
-          <br />
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required />
-          <br />
-          <button type="submit">Login</button>
-        </form>
-      </div>
-      <div class="v31_398">
-        <div class="name"></div>
-        <div class="v31_397">
-          <span class="v31_395">Forget Password?</span>
-          <span class="v31_396">Don’t have an account? Register here!</span>
-        </div>
-      </div>
-    </div>
-    <img
-      src="img/chatbot.png"
-      srcset="img/chatbot-logo-1@2x.png 2x,
-              img/chatbot-logo-1@3x.png 3x"
-      class="chatbot-logo-1"
-    />
-  </body>
-</html>
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html>
-  <head>
-    {% load static %}
-
     <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/style2.css' %}">
-    
-    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles2.css" />
+    <title>College ChatBot</title>
   </head>
   <body>
     <div class="v14_301">
       <div class="v31_352">
         <div class="v14_302"></div>
         <div class="name"></div>
-        <span class="Home">Home</span>
-        <span class="v30_471">College ChatBot</span>
-        
+        <h1 class="v30_471">Team 2 ChatBot</h1>
         <div class="signup-form-container">
-          <form class="signup-form">
+          <form class="signup-form" action="{% url 'mainchat-afterlogin' %}" method="post">
+            {% csrf_token %}
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" placeholder="Enter your username" required />
-            <br />
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" placeholder="Enter your password" required />
-            <br />
-            <button type="submit">Sign Up</button>
+            <button type="submit">Sign in</button>
           </form>
         </div>
       </div>
     </div>
-    <img src="{% static "img/chatbot-logo-1.png" %}" alt="My image"
-      srcset="My image@5x.png 5x,
-      My image@5x.png 5x"
-      class="chatbot-logo-1"
-    />
+    <img src="{% static "img/chatbot-logo-1.png" %}" alt="ChatBot Logo" class="chatbot-logo-1">
   </body>
 </html>
-
-
-
-
-
-<!DOCTYPE html>
-<html>
-  <head>
-    {% load static %}
-    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/style.css' %}">
-    <title>ChatBot</title>
-  </head>
-  <body>
-    <img src="{% static 'img/chatbot-logo-1.png' %}" alt="ChatBot" class="chatbot-image">
-    <div class="chatbot-container">
-      <div class="ChatBotPanel">
-        <h1 class="chatbot-title">ChatBot</h1>
-        <div class="Rectangle-4">
-          <div class="Rectangle-1">
-            <div class="chatbot-header">
-              <div class="chatbot-logo-2-Traced"></div>
-              <span class="chatbot-greeting">
-                Hi, I am your AI assistant. I’m ready to help you answer any question you have related to College
-              </span>
-            </div>
-            <input type="text" placeholder="Enter your text here" class="conversation-box">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="content">
-      {% block content %}
-      {% endblock %}
-    </div>
-  </body>
-</html>
-

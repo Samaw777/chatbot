@@ -1,0 +1,126 @@
+/* Navbar Styles */
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #1a1a2e, #6b1e6c, #1a1a2e);
+    color: #fff; /* updated font color */
+  }
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /*Nav bar header*/
+  li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+  }
+  
+  .logotitle{
+    cursor: pointer;
+    margin-right: auto;
+  }
+  
+  .nav__links{
+    list-style: none;
+  }
+  .nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a{
+    transition: all 0.3s ease 0;
+  }
+  
+  .nav__links li a:hover{
+    color: #8b45fd
+  }
+  
+  button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(127, 17, 224, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  button:hover {
+    background-color: rgba(127, 17, 224, 0.8);
+  }
+  
+    /* Main Content Styles */
+    .main-container {
+      display: flex;
+      justify-content: space-between;
+  
+      padding: 20px 50px;
+    }
+    
+    .main-left {
+      width: 70%;
+      margin-left: 100px;
+    }
+  
+    .main-left h1{
+      margin-top: 10px;
+      font-size: 110px;
+    }
+    
+    .main-left p{
+      font-size: 38px;
+    }
+    .main-left button{
+      margin-top: 20px;
+      width: 200px;
+      height: 75px;
+      flex-grow: 0;
+      margin: 26px 217px 296px 0;
+      border-radius: 21px;
+    
+    }
+  
+    .main-right {
+      width: 30%;
+      text-align: right;
+    }
+  
+    .main-right img {
+      width: 400px;
+      height: 700px;
+    }
+    
+    
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+    
+    h1 {
+      font-size: 36px;
+    }
+    
+    .AI-Assistant-ready-to-help-you-with-any-question-about-college {
+      display: block;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .Rectangle-3 {
+      width: 50px;
+      height: 5px;
+      background-color: #333;
+    }

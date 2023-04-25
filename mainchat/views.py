@@ -8,8 +8,8 @@ from tensorflow.keras.models import load_model
 
 # Create your views here.
 
-def index(request):
-    return render(request, 'mainchat/index.html')
+def homepage(request):
+    return render(request, 'mainchat/homepage.html')
 
 def home(request):
     if request.method == 'POST':
@@ -19,7 +19,12 @@ def home(request):
 
 def output(request):  
     return render(request, 'mainchat/output.html')
-
+def login(request):
+    return render(request, 'mainchat/login.html')
+def signup(request):
+    return render(request, 'mainchat/signup.html')
+def afterlogin(request):
+    return render(request, 'mainchat/afterlogin.html')
 def chatpaneltest(request):
     return render(request, 'mainchat/chatpaneltest.html')
 
