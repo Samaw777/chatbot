@@ -14,7 +14,7 @@
                 <li><a href="{% url 'chatpaneltest' %}">Chat</a></li>
             </ul>
         </nav>
-        <a class="cta" href="{% url 'chatpaneltest' %}"><button>USER</button></a>
+        <a class="cta" href="{% url 'chatpaneltest' %}"><button>{{ request.user.username }}</button></a>
         <a class="cta" href="{% url 'mainchat-homepage' %}"><button>LOGOUT</button></a>
         
     </header>
