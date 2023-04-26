@@ -27,6 +27,8 @@ def afterlogin(request):
     return render(request, 'mainchat/afterlogin.html')
 def chatpaneltest(request):
     return render(request, 'mainchat/chatpaneltest.html')
+def about(request):
+    return render(request, 'mainchat/about.html')
 
 
 #Chatbot ruterning function

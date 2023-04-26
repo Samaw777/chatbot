@@ -8,6 +8,7 @@ urlpatterns = [
     path('output/', views.output, name='mainchat-output'),
     path('login/', views.login, name='mainchat-login'),
     path('signup/', views.signup, name='mainchat-signup'), 
+    path('about/', views.about, name='about'),
     path('afterlogin/', views.afterlogin, name='mainchat-afterlogin'),
     path('chatbot_response/', csrf_exempt(views.chatbot_response), name='chatbot-response'),
     path('chatpaneltest', views.chatpaneltest, name='chatpaneltest'),
