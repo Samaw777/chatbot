@@ -19,8 +19,8 @@ def home(request):
 
 def output(request):  
     return render(request, 'mainchat/output.html')
-def login(request):
-    return render(request, 'mainchat/login.html')
+def sigin(request):
+    return render(request, 'mainchat/sigin.html')
 def signup(request):
     return render(request, 'mainchat/signup.html')
 def afterlogin(request):
@@ -126,16 +126,17 @@ def signup(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
-        User.objects.create_user(username=username, password=password)
+        myuser = User.objects.create_user(username=username, password=password)
+        myuser.save()
         user = authenticate(request, username=username, password=password)
-        login(request, user)
-        return redirect('mainchat-afterlogin')
+        #login(request, user)
+        return redirect('mainchat-sigin')
     else:
         return render(request, 'mainchat/signup.html')
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect
 
-def login(request):
+def sigin(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
@@ -144,6 +145,6 @@ def login(request):
             login(request, user)
             return redirect('mainchat-afterlogin')
         else:
-            return render(request, 'mainchat/login.html', {'error_message': 'Invalid username or password.'})
+            return render(request, 'mainchat/sigin.html', {'error_message': 'Invalid username or password.'})
     else:
-        return render(request, 'mainchat/login.html')
+        return render(request, 'mainchat/sigin.html')

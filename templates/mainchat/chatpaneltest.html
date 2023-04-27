@@ -21,7 +21,7 @@
         </ul>
     </nav>
     <div class="dropdown-wrapper">
-      <a class="cta" href="#">Name {{ request.user.username }}</a>
+      <a class="cta" href="#"> {{ request.user.username }}</a>
       <div class="dropdown_menu">
         <ul>
           <li><a href="{% url 'mainchat-homepage' %}">LOGOUT</a></li>
