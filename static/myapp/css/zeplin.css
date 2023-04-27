@@ -94,6 +94,7 @@ body {
   
   .dropdown_menu li {
     padding: 10px;
+    list-style: none;
   }
   
   .dropdown_menu li:hover {
