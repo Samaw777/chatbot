@@ -12,13 +12,17 @@
     
 </head>
 <body>
-<header>
+  <header>
+    <a class="logotitle" href="#">College Chatbot</a>
     <nav>
-        <ul>
-            <li><a href="{% url 'mainchat-afterlogin' %}">Home</a></li>
+        <ul class="nav__links">
+            <li><a href="{% url 'mainchat-homepage' %}">Home</a></li>
+            <li><a href="{% url 'mainchat-login' %}">Chat</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
         </ul>
     </nav>
-</header>
+    <a class="cta" href="{% url 'mainchat-login' %}"><button>Login</button></a>
+  </header>
 <main>
     <div class="chatbot-wrapper">
         <div class="chatbot-container">
@@ -45,7 +49,7 @@
 
     function getUserResponse(){
         var userText = $('#textInput').val();
-        var userHTML = "<p class='user-chat'>User: <span>"+userText+"</span></p>";
+        var userHTML = "<p class='user-chat'><span>"+userText+"</span></p>";
         $('#textInput').val("");
         $('#chatbot').append(userHTML);
 
