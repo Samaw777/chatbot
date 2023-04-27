@@ -5,6 +5,10 @@ body {
   header {
     height: 80px; /* set the height of the header */
     background-color: transparent; /* set the background color to be transparent */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
   }
   
   .logo-container {
@@ -16,50 +20,93 @@ body {
   }
   
   /*NavBar */
-
-  nav {
+  li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: transparent;
-    font-size: 24px;
-    height: 80px;
-    margin-top: 10px;
+    padding: 30px 10%;
   }
   
-  nav ul {
+  .logotitle{
+    cursor: pointer;
+    margin-right: auto;
+  }
+  
+  .nav__links{
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
   }
-  
-  nav ul li {
+  .nav__links li{
     display: inline-block;
-    margin-right: 20px;
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a{
+    transition: all 0.3s ease 0;
+  }
+  
+  .nav__links li a:hover{
+    color: #8b45fd
+  }
+  
+  button{
     margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(127, 17, 224, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
   }
   
-  nav ul li:last-child {
-    margin-right: 0;
+  button:hover {
+    background-color: rgba(127, 17, 224, 0.8);
   }
-  ul li:first-child {
-    margin-left: 0;
+
+
+  /*drop down*/
+  .dropdown-wrapper {
+    position: relative;
   }
   
-  nav ul li a {
+  .dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cta:hover + .dropdown_menu,
+  .dropdown_menu:hover {
+    display: block;
+  }
+  
+  .dropdown_menu li {
+    padding: 10px;
+  }
+  
+  .dropdown_menu li:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .dropdown_menu a {
+    color: #333;
     text-decoration: none;
-    color: #fff;
   }
   
-  nav ul li a:hover {
+  .dropdown_menu a:hover {
     text-decoration: underline;
-  }
-  
-  
-  a {
-    color: #fff;
-    text-decoration: none;
   }
   
   /*Chatbot panel*/
@@ -136,6 +183,8 @@ body {
     background-color: #ffffff;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   }
+
+
   /*input text box*/
 
   .input-container {

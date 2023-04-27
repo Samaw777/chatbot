@@ -12,12 +12,22 @@
     
 </head>
 <body>
-<header>
+  <header>
+    <a class="logotitle" href="#">College Chatbot</a>
     <nav>
-        <ul>
+        <ul class="nav__links">
             <li><a href="{% url 'mainchat-afterlogin' %}">Home</a></li>
+            <li><a href="{% url 'chatpaneltest' %}">Chat</a></li>
         </ul>
     </nav>
+    <div class="dropdown-wrapper">
+      <a class="cta" href="#">Name {{ request.user.username }}</a>
+      <div class="dropdown_menu">
+        <ul>
+          <li><a href="{% url 'mainchat-homepage' %}">LOGOUT</a></li>
+        </ul>
+      </div>
+    </div>
 </header>
 <main>
     <div class="chatbot-wrapper">

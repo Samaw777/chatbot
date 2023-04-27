@@ -1,0 +1,192 @@
+/* Navbar Styles */
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #1a1a2e, #6b1e6c, #1a1a2e);
+    color: #fff; /* updated font color */
+  }
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+  }
+  /*Nav bar header*/
+ li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+  }
+  
+  .logotitle{
+    cursor: pointer;
+    margin-right: auto;
+  }
+  
+  .nav__links{
+    list-style: none;
+  }
+  .nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a{
+    transition: all 0.3s ease 0;
+  }
+  
+  .nav__links li a:hover{
+    color: #8b45fd
+  }
+  
+  button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(127, 17, 224, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  button:hover {
+    background-color: rgba(127, 17, 224, 0.8);
+  }
+
+  
+  
+  .about-section {
+    text-align: center;
+  }
+  
+  .about-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 70%;
+    margin-top: 20px;
+    text-align: left; /* Align text to the left within the box */
+  }
+  
+  /* Add the following styles to your existing CSS */
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .faq-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 70%;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  /* Updated width to 50% minus the space between boxes */
+  .about-content, .faq-content {
+    width: calc(70% - 20px); 
+  }
+  
+  /* Add gap between the boxes */
+  .about-content {
+    margin-right: 20px; 
+  }
+  
+  /* Apply different styles to each heading level */
+  
+  h7 {
+    color: #320082;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif; 
+  }
+  h8 {
+    color: #320082;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif; 
+  }
+  h9 {
+    color: #320082;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif; 
+  }
+  h10 {
+    color: #320082;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif; 
+  }
+  h6 {
+    color: #7a797a;
+    font-family: "Montserrat", sans-serif; 
+  }
+  
+  /* Apply font size for contactinfo */
+  h6 {
+    font-size: 10px;
+  }
+  
+  
+  /* aboutcontent and faqcontent color & font settings */
+  
+  .about-content p,
+  .faq-content p {
+    color: #000000;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
+  
+  
+  /* list under aboutcontent Styles */
+  .about-content ul li {
+    color: #000000; 
+  }
+  
+  .about-content ul li {
+    list-style-position: inside;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 10px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  
+  /* aboutcontent and faqcontent heading setting */
+  .about-content h3,
+  .about-content h2 {
+    color: #000000;
+  }
+  
+  .about-content h3,
+  .about-content h2 {
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .faq-content h2 {
+    color: #000000;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  
+  /*'click' hyperlink*/
+  .about-content a,
+  .faq-content a {
+    color: #534f55;
+    text-decoration: underline;
+  }
+  
+  .about-content a:hover,
+  .faq-content a:hover {
+    color: #534f55;
+  }
