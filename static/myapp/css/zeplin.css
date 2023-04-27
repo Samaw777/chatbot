@@ -87,6 +87,10 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
   
+  .cta {
+    margin-left: 20px;
+  }
+
   .cta:hover + .dropdown_menu,
   .dropdown_menu:hover {
     display: block;
