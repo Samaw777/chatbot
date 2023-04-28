@@ -1,192 +1,301 @@
 /* Navbar Styles */
 body{
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom right, #1a1a2e, #6b1e6c, #1a1a2e);
-    color: #fff; /* updated font color */
-  }
-  *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 5px;
-  }
-  /*Nav bar header*/
- li, a, button{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    color: #edf0f1;
-    text-decoration: none;
-  }
-  header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-  }
-  
-  .logotitle{
-    cursor: pointer;
-    margin-right: auto;
-  }
-  
-  .nav__links{
-    list-style: none;
-  }
-  .nav__links li{
-    display: inline-block;
-    padding: 0px 20px;
-  }
-  
-  .nav__links li a{
-    transition: all 0.3s ease 0;
-  }
-  
-  .nav__links li a:hover{
-    color: #8b45fd
-  }
-  
-  button{
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgba(127, 17, 224, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
-  
-  button:hover {
-    background-color: rgba(127, 17, 224, 0.8);
-  }
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #1a1a2e, #6b1e6c, #1a1a2e);
+  color: #fff; /* updated font color */
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5px;
+}
+/*Nav bar header*/
 
-  
-  
-  .about-section {
-    text-align: center;
-  }
-  
-  .about-content {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-    width: 70%;
-    margin-top: 20px;
-    text-align: left; /* Align text to the left within the box */
-  }
-  
-  /* Add the following styles to your existing CSS */
-  .content-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .faq-content {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-    width: 70%;
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  /* Updated width to 50% minus the space between boxes */
-  .about-content, .faq-content {
-    width: calc(70% - 20px); 
-  }
-  
-  /* Add gap between the boxes */
-  .about-content {
-    margin-right: 20px; 
-  }
-  
-  /* Apply different styles to each heading level */
-  
-  h7 {
-    color: #320082;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif; 
-  }
-  h8 {
-    color: #320082;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif; 
-  }
-  h9 {
-    color: #320082;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif; 
-  }
-  h10 {
-    color: #320082;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif; 
-  }
-  h6 {
-    color: #7a797a;
-    font-family: "Montserrat", sans-serif; 
-  }
-  
-  /* Apply font size for contactinfo */
-  h6 {
-    font-size: 10px;
-  }
-  
-  
-  /* aboutcontent and faqcontent color & font settings */
-  
-  .about-content p,
-  .faq-content p {
-    color: #000000;
-    font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-  }
-  
-  
-  /* list under aboutcontent Styles */
-  .about-content ul li {
-    color: #000000; 
-  }
-  
-  .about-content ul li {
-    list-style-position: inside;
-    font-size: 15px;
-    text-align: left;
-    padding-left: 10px;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  
-  /* aboutcontent and faqcontent heading setting */
-  .about-content h3,
-  .about-content h2 {
-    color: #000000;
-  }
-  
-  .about-content h3,
-  .about-content h2 {
-    font-size: 25px;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  .faq-content h2 {
-    color: #000000;
-    font-size: 25px;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  
-  /*'click' hyperlink*/
-  .about-content a,
-  .faq-content a {
-    color: #534f55;
-    text-decoration: underline;
-  }
-  
-  .about-content a:hover,
-  .faq-content a:hover {
-    color: #534f55;
-  }
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+.logotitle{
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  margin-right: auto;
+  font-size: 15px;
+}
+
+.nav__links{
+  list-style: none;
+}
+.nav__links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a{
+  transition: all 0.3s ease 0;
+}
+
+.nav__links li a:hover{
+  color: #8b45fd
+}
+
+button{
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(127, 17, 224, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(127, 17, 224, 0.8);
+}
+
+/*welcomecontent*/
+.main-header {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.7rem;
+  font-family: 'Trebuchet MS';
+  color: #ffffff;
+}
+
+
+.about-section {
+  text-align: center;
+}
+
+
+
+.about-content {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(206, 217, 246, 0.5));
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 70%;
+  margin-top: 20px;
+  text-align: left; /* Align text to the left within the box */
+}
+
+
+/* Add the following styles to your existing CSS */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-content {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(217, 216, 243, 0.5));
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 70%;
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Updated width to 50% minus the space between boxes */
+.about-content, .faq-content {
+  width: calc(70% - 20px); 
+}
+
+/* Add gap between the boxes */
+.about-content {
+  margin-right: 18px; 
+}
+
+/* Apply different styles to each heading level */
+
+h7 {
+  color: #430247;
+  font-size: 18px;
+  font-family: 'Trebuchet MS'; 
+}
+h8 {
+  color: #430247;
+  font-size: 18px;
+  font-family: 'Trebuchet MS'; 
+}
+h9 {
+  color: #430247;
+  font-size: 18px;
+  font-family: 'Trebuchet MS'; 
+}
+h10 {
+  color: #430247;
+  font-size: 18px;
+  font-family: 'Trebuchet MS'; 
+}
+h6 {
+  color: #7b7b7b;
+  font-family: 'Trebuchet MS'; 
+}
+
+/* Apply font size for contactinfo */
+h6 {
+  font-size: 10px;
+}
+
+
+/* aboutcontent and faqcontent color & font settings */
+
+
+.faq-content p4 {
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Trebuchet MS' ;
+  font-style: normal; 
+}
+.faq-content p5 {
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Trebuchet MS' ; 
+  font-style: normal; 
+}
+.faq-content p6 {
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Trebuchet MS' ;
+  font-style: normal;  
+}
+.faq-content p7 {
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Trebuchet MS' ;
+  font-style: normal;  
+}
+
+
+
+/* list under aboutcontent Styles */
+.about-content ul li {
+  color: #000000; 
+}
+
+.about-content ul li {
+  list-style-position: inside;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
+  font-family: 'Trebuchet MS';
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+
+}
+
+ul.square-bullet {
+  font-family: 'Trebuchet MS';
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+  list-style-type: square;
+}
+
+/* list under faqcontent styles */
+
+
+ol.numbered {
+  font-family: 'Trebuchet MS';
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  color: #260128;
+}
+
+/* aboutcontent and faqcontent heading setting */
+
+.about-content h2 {
+  color: #260128;
+}
+
+.about-content h2 {
+  font-size: 18px;
+  font-family: 'Trebuchet MS';
+}
+
+.faq-content h2 {
+  color: #260128;
+  font-size: 28px;
+  font-family: 'Trebuchet MS';
+}
+
+
+/*'click' hyperlink*/
+.about-content a,
+.faq-content a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.about-content a:hover,
+.faq-content a:hover {
+  color: #000000;
+}
+
+.image {
+  /* Set the float property to right */
+  float: right;
+  /* Add some margin-left to create space between the text and the image */
+  margin-left: 100px;
+  margin-right: 10px;
+  /* Set the image width */
+  width: 250px;
+  /* Set the image height */
+  height: auto;
+}
+
+p2 {
+  color: #000000;
+  font-family: 'Trebuchet MS';
+  font-size: 18px;
+  margin-block-start: 50px;
+  padding-left: 0px;
+  list-style-position: inside;
+  font-weight: bold; 
+
+}
+
+p1 {
+  color: #432cc1;
+  font-size: 30px;
+  font-family: 'Trebuchet MS';
+  font-weight: bold;
+  list-style-position: inside;
+  padding-left: 0%;
+
+}
+
+p3 {
+  color: #432cc1;
+  font-size: 18px;
+  font-family: 'Trebuchet MS';
+  line-height: 1.5;
+  padding-left: 0px;
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+.chatbot-image {
+  /* Set the float property to right */
+  float: right;
+  /* Add some margin-left to create space between the text and the image */
+  margin-right: 20px;
+  /* Set the image width */
+  width: 150px;
+  /* Set the image height */
+  height: 250px;
+}

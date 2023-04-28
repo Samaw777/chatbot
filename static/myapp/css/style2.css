@@ -79,6 +79,11 @@ body {
   margin-top: 40px;
 }
 
+.signup-form-container a{
+  color:#000000;
+  margin-top: 20px;
+}
+
 .signup-form {
   background: #FFFFFF;
   padding: 40px;
@@ -182,4 +187,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #D1C1E0;
+}
+
+.noaccount{
+  color: #000000;
+  margin-top: 20px;
 }
